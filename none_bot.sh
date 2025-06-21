@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # NoneBot 一键安装脚本
-# 作者：根据 README.md 自动生成
+# 作者anyliew
 # 使用方法：chmod +x install_nonebot.sh && sudo ./install_nonebot.sh
 
 set -e  # 遇到错误立即退出
@@ -11,12 +11,11 @@ echo "=== 开始安装 NoneBot ==="
 # 1. 系统更新及基础依赖安装
 echo ">> 正在更新系统并安装依赖..."
 apt update -y && apt upgrade -y
-apt install -y tmux vim curl wget tar ffmpeg git \
-    fonts-noto-cjk fonts-noto-color-emoji
+apt install -y tmux vim curl wget tar ffmpeg git fonts-noto-cjk fonts-noto-color-emoji
 
 # 2. 克隆代码仓库
 echo ">> 正在克隆代码仓库..."
-mkdir -p /opt
+
 git clone https://github.com/anyliew/none_bot /opt/none_bot/
 git clone https://github.com/anyliew/meme_emoji /opt/meme_emoji/
 
@@ -40,3 +39,4 @@ pip install -r /opt/none_bot/requirements.txt
 echo "=== 安装完成！ ==="
 echo "请手动激活虚拟环境：source /opt/python/bin/activate"
 echo "然后运行 NoneBot 项目"
+echo "nb run"
