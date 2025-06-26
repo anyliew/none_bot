@@ -14,7 +14,9 @@ apt install tmux vim curl wget tar ffmpeg git fonts-noto-cjk fonts-noto-color-em
 
 ```bash
 git clone https://github.com/anyliew/none_bot /opt/none_bot/
-git clone https://github.com/anyliew/meme_emoji /opt/meme_emoji/
+git clone https://github.com/anyliew/meme_emoji /opt/meme/meme_emoji/
+https://github.com/jinjiao007/meme-generator-jj /opt/meme/meme-generator-jj/
+git clone https://github.com/MemeCrafters/meme-generator-contrib /opt/meme/meme-generator-contrib/
 ```
 
 
